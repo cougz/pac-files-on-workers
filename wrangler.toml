@@ -1,0 +1,11 @@
+name = "pac-files-on-workers"
+main = "src/index.js"
+compatibility_date = "2026-03-23"
+workers_dev = true
+
+# KV namespace for storing the PAC template and publish config.
+# The `id` is intentionally omitted — Cloudflare auto-provisions the namespace
+# on first deploy (Workers Builds / wrangler deploy). The namespace ID will be
+# visible in the Cloudflare dashboard after the first deployment.
+[[kv_namespaces]]
+binding = "PAC_STORE"
