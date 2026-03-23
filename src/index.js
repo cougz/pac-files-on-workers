@@ -99,7 +99,7 @@ function buildPac(template, endpointId) {
 function pacResponse(content) {
   return new Response(content, {
     headers: {
-      'Content-Type': 'application/x-ns-proxy-autoconfig',
+      'Content-Type': 'text/plain; charset=utf-8',
       // Prevent browsers from caching stale PAC files after an update.
       'Cache-Control': 'no-cache, no-store, must-revalidate',
       'Pragma': 'no-cache',
